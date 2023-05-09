@@ -5,9 +5,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&family=Sriracha&display=swap');
 
 *{
-    margin: 0;
-    padding: 0;
+    margin: 0px;
+    padding: 0px;
     font-size: 1em;
+}
+
+body{
+    font-family: 'Sriracha', cursive;
+    min-height: 100vh;
 }
 
 header {
@@ -17,15 +22,16 @@ header {
     margin-bottom: 60px;
 }
 
-header h1{
+header > h1{
     font-family: 'Passion One';
     font-size: 10vw;
-   /* font-weight: 700 bold;*/
+   /* font-weight: 700 bold;
+      text-transform: uppercase;*/
     font-variant: small-caps;
     padding-top: 50px;
     
 }
-header p{
+header > p{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     padding-bottom: 50px;
     
@@ -39,26 +45,32 @@ a{
 
 a:hover{
     text-decoration: underline;
-    color: goldenrod;
+    
 }
 
-body{
-    font-family: 'Sriracha', cursive;
-    
+section{
+    padding-top: 10vh;
+    padding-bottom: 10vh;
 }
 section p{
     
-    margin: 50px;
+    padding-left: 50px;
     font-size: 3.2vw;
-
+    line-height: 1.5em;
 }
-.imagem{
+
+section.imagem{
     background-size: cover;
     background-position: center center;
     background-attachment: fixed;
     padding-top: 40px;
     padding-bottom: 40px;
     color: white
+}
+
+section.imagem > p{
+    width: 380px;
+    background-color: rgba(0, 0, 0, 0.211);
 }
 section#img01{
     background-image: url('imagens/background001.jpg');
@@ -67,7 +79,7 @@ section#img01{
 
 section#img02{
     background-image: url('imagens/background002.jpg');
-    color: black;
+    
 }
 
 footer{
