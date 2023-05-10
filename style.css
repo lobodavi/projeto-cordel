@@ -77,7 +77,7 @@ section.imagem{
 
 section.imagem > p{
     display: inline-block;
-    padding: 50px;
+    
     background-color: rgba(0, 0, 0, 0.211);
 }
 section#img01{
@@ -94,6 +94,6 @@ footer{
     background-color: black;
     color: white;
     text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: var(--fonte1);
     padding: 10px;
 }
